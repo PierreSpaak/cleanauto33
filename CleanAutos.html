@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Clean Autos</title>
+    <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./moments 2.29.1.js"></script>
+
+    <style>
+
+        html, body {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+            height: 100vh;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            grid-column-gap: 2rem;
+            grid-row-gap: 1rem;
+        }
+
+            .wrapper > div > input, .wrapper > div > textarea {
+                width: 100%;
+            }
+
+        @media print {
+            .notPrinted {
+                display: none;
+            }
+
+            .wrapper {
+                justify-content: unset;
+            }
+
+                .wrapper > *:first-child {
+                    margin: 0;
+                }
+        }
+
+        .encadre {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div style="grid-column: span 2; text-align:center; margin-top: 1em;">
+            <img src="./logo.jpg" style="height:90px;" />
+            <div style="border-bottom: 1px solid red;">
+                <span style="font-size:2em; font-weight: bold;">Fiche d'intervention</span><br />
+                <span style="font-size:0.8rem;">
+                    Dominique Martin - Tél: 06 86 63 51 32<br />
+                    16 Avenue Louis de Broglie, 33600 Pessac - www.cleanautos33.com
+                </span>
+            </div>
+
+        </div>
+
+        <label><input type="checkbox" /><span>&nbsp;formule beauté express</span></label>
+        <label><input type="checkbox" /><span>&nbsp;formule beauté prestige</span></label>
+
+        <label><input type="checkbox" />&nbsp;formule beauté intégrale</label>
+        <label><input type="checkbox" />&nbsp;pack réno citadine ou 4x4/suv</label>
+
+        <div>
+            <div>Prix</div>
+            <input type="text" />
+
+        </div>
+
+        <div>
+            <div>Date</div>
+            <input type="date" />
+        </div>
+
+        <div>
+            <div>Nom</div>
+            <input type="text" id="tbNom" />
+        </div>
+
+        <div>
+            <div>Prénom</div>
+            <input type="text" id="tbPrenom" />
+        </div>
+
+        <div style="grid-column: span 2">
+            <div>Adresse</div>
+            <input type="text" />
+        </div>
+
+        <div>
+            <div>Mail</div>
+            <input type="text" />
+        </div>
+
+        <div>
+            <div>Tél</div>
+            <input type="text" />
+        </div>
+
+        <div style="grid-column: span 2; display:grid; grid-template-columns: 1fr 1fr auto; grid-gap:0.5rem; padding:0.5rem;" class="encadre">
+            <div>
+                <div>Marque</div>
+                <input type="text" />
+            </div>
+            <div>
+                <div>Immatriculation</div>
+                <input type="text" />
+            </div>
+            <div>
+                <div>Km</div>
+                <input type="text" />
+            </div>
+        </div>
+
+        <div style="grid-column: span 2">
+            <div>Remarques</div>
+            <textarea rows="5" style="resize: none;"></textarea>
+        </div>
+
+        <div style="grid-column: span 2; display: grid; grid-template-columns: auto 1fr;">
+            <div style="display:grid;">
+                <div>Signature Clean Autos</div>
+                <img src="./signature.jpg" style="width:200px;" />
+            </div>
+            <div>
+                <div style="text-align: right;">Signature client</div>
+                <canvas width="400" height="200" class="encadre"></canvas>
+            </div>
+        </div>
+
+        <button class="notPrinted" style="padding:0.5rem; grid-column: span 2;">Imprimer</button>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="./CleanAutos.min.js"></script>
+
