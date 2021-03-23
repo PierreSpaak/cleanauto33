@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -52,6 +52,21 @@
         .encadre {
             border: 1px solid black;
         }
+
+        @media screen {
+            input:not([type='checkbox']) {
+                height: 3rem;
+                background-color: rgba(210, 21, 27, 0.7);
+                font-size: 1.5rem;
+            }
+
+            textarea {
+                background-color: rgba(210, 21, 27, 0.7);
+                font-size: 1.5rem;
+            }
+        }
+
+        
     </style>
 
 </head>
@@ -133,13 +148,13 @@
             <textarea rows="5" style="resize: none;"></textarea>
         </div>
 
-        <div style="grid-column: span 2; display: grid; grid-template-columns: auto 1fr;">
+        <div style="grid-column: span 2; display: grid; grid-template-columns: 1fr 1fr;">
             <div style="display:grid;">
                 <div>Signature Clean Autos</div>
                 <img src="./signature.jpg" style="width:200px;" />
             </div>
-            <div>
-                <div style="text-align: right;">Signature client</div>
+            <div style="text-align: right;">
+                <div>Signature client</div>
                 <canvas width="400" height="200" class="encadre"></canvas>
             </div>
         </div>
@@ -149,4 +164,3 @@
 </body>
 </html>
 <script type="text/javascript" src="./CleanAutos.min.js"></script>
-
