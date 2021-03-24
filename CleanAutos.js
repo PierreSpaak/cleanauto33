@@ -22,7 +22,6 @@ function func(e) {
     //const a = "02";
     //while (e.length < 2) e = "0" + e;
     //return moment(`2${a}1-${e}-01` ) - moment() > 0;
-
 }
 
 function Draw(e) {
