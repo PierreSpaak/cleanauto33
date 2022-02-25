@@ -17,15 +17,8 @@ canvas.addEventListener("mousedown", (e) => {
     lastY = e.offsetY;
 });
 
-function func(e) {
-    return true;
-    //const a = "02";
-    //while (e.length < 2) e = "0" + e;
-    //return moment(`2${a}1-${e}-01` ) - moment() > 0;
-}
-
 function Draw(e) {
-    if (!isDrawing || !func("5")) return;
+    if (!isDrawing) return;
     ctx.beginPath();
     ctx.moveTo(lastX, lastY);
     ctx.lineTo(e.offsetX, e.offsetY);
@@ -55,10 +48,6 @@ window.addEventListener("dblclick", (e) => {
 });
 
 $(document).ready(function () {
-
-    if (!func("5")) {
-        $("input").remove();
-    }
 
     $("input[type=date]").val(moment().format('YYYY-MM-DD'));
 
