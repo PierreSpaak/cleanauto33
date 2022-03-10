@@ -8,7 +8,7 @@
     <script type="text/javascript" src="./moments 2.29.1.js"></script>
 
     <style>
-        
+
         html, body {
             box-sizing: border-box;
             padding: 0;
@@ -36,22 +36,6 @@
                 width: 100%;
             }
 
-        @media print {
-            .notPrinted {
-                display: none;
-            }
-
-            .wrapper {
-                justify-content: unset;
-                grid-column-gap: 0rem;
-                grid-row-gap: 0rem;
-            }
-
-                .wrapper > *:first-child {
-                    margin: 0;
-                }
-        }
-
         .encadre {
             border: 1px solid black;
         }
@@ -67,8 +51,55 @@
                 background-color: rgba(210, 21, 27, 0.7);
                 font-size: 1.5rem;
             }
+
+            /*.cgv {
+                display: none;
+            }*/
+
+
         }
 
+        @media print {
+            .notPrinted {
+                display: none;
+            }
+
+            .wrapper {
+                justify-content: unset;
+                /*grid-column-gap: 0rem;
+                grid-row-gap: 0rem;*/
+            }
+
+                .wrapper > *:first-child {
+                    margin: 0;
+                }
+
+            .cgv {
+                page-break-before: always;
+            }
+        }
+
+
+
+        .cgv {
+            font-size: smaller;
+            text-transform: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0.7rem;
+            padding: 0.5rem;
+        }
+
+            .cgv .titre {
+                margin-bottom: 0.5rem;
+                font-weight: bold;
+                text-decoration: underline;
+                text-align: center;
+            }
+
+            .cgv > div > div {
+                margin-bottom: 0.2rem;
+            }
     </style>
 
 </head>
@@ -165,6 +196,61 @@
         </div>
 
         <button class="notPrinted" style="padding:0.5rem; grid-column: span 2;">Imprimer</button>
+    </div>
+
+    <div class="cgv">
+        <div>
+            <div class="titre">1.Objet</div>
+            <div>1. : Les présentes C.G.V. régissent tout devis, offre, proposition commerciale, étude, accusé de réception de commande ou de toute commande et convention conclu avec la société CLEAN AUTOS 33 dont le siège social est situé 16 Avenue Louis de Broglie, 33600 Pessac immatriculée au registre du commerce et des sociétés sous le numéro SIRET 49500665200046 ci-après désignée « le prestataire ».</div>
+            <div class="titre">2. Caractéristiques</div>
+            <div>2. : Le présent document constitue les conditions d'engagement mais peut être modifié ou déroger si et seulement si les conditions particulières ont été négociées et acceptées de façon expresse par écrit par le prestataire, pour des services spécifiques attachés à la vente de certaines marchandises.</div>
+            <div class="titre">3. Conditions générales</div>
+            <div>3.1. : Conclusion du contrat.</div>
+            <div>3.1.1. : Le présent document signé constitue l'engagement ferme et définitif impliquant l'adhésion totale et sans réserve du contractant aux présentes CGV sauf exception faite au 2, et 3.1.2 du présent document.</div>
+            <div>3.1.2. : Les commandes sont fermes et irrévocables à la signature du bon de commande.</div>
+            <div>Dans le cadre du démarchage hors établissement, conformément à l'article L121-21 du Code de la consommation, le non professionnel a la faculté de se rétracter dans le délai légal, soit quatorze jours après le démarchage. Afin d’utiliser ce droit de rétractation, le coupon détachable du présent document doit être retourné à l’adresse de la société figurant sur ce document dans le délai légal par courrier recommandé avec AR.</div>
+            <div>3.1.3. : En revanche, il n'existe aucun droit de rétractation pour un contrat signé au sein de l'établissement.</div>
+            <div>3.1.4 : Le prestataire n'est lié que par les marchandises désignées et les engagements figurant expressément au devis, à l'étude ou à l'offre. Tout devis, étude ou offre n'engage le prestataire que pour la période de validité indiquée. En l'absence d'indication, l’offre ne sera valable que dix jours à compter du jour de sa date d'émission.</div>
+            <div>3.2. : Prix</div>
+            <div>3.2.1. : Les prix établis selon les conditions économiques existantes au jour de la conclusion du contrat de vente, sont révisables à tout moment en fonction de la variation du coût de leurs éléments constitutifs.</div>
+            <div>3.2.2. : Pour les fournitures tarifées, les prix facturés sont ceux du barème des prix unitaires en vigueur au jour de la commande.</div>
+            <div>3.2.3 : le client revendeur est tenu par nos prix minimum conseillers et ne peuvent pas vendre en dessous de notre tarif client conseiller.</div>
+            <div>3.3. : Conditions de paiement</div>
+            <div>3.3.1. : Les factures du prestataire sont payables à la société CLEAN AUTOS 33 16 Avenue Louis de Broglie 33600 Pessac, les marchandises sont payables au comptant et sans escompte au jour de la réception de la facture. Un acompte de trente pour cent sera systématiquement demandé pour valider chaque commande.</div>
+            <div>3.3.2. : Les paiements effectués avant le terme contractuel ne donnent pas lieu au paiement d'un escompte.</div>
+            <div>3.3.3. : Le non règlement total ou partiel à la date convenue, sans qu'un rappel soit nécessaire, entraîne l'exigibilité immédiate de toutes les sommes dues, outre la perception de pénalités fixées à 3 fois le taux d'intérêt légal, d'une clause pénale de quinze pour cent des sommes dues, et de plein droit pour les mandants professionnels, d'une indemnité pour frais de recouvrement d'un montant de 40€ minimum (Loi LME - art. L441-6 du code du commerce et Décret 2012-1115 du 02/10/2012),</div>
+            <div>3.3.4. : Le prestataire se réserve le droit de mandater un cabinet de recouvrement tiers pour recouvrer les sommes impayées. Si tel est le cas, le paiement s'effectuera directement auprès d'eux et le prestataire refusera les paiements.</div>
+            <div>3.4. : Fabrications particulières</div>
+            <div>3.4.1. : Lorsque les quantités livrées et facturées au poids ou au mètre font l'objet d'une mise en fabrication particulière, elles peuvent différer dans une limite n'excédant pas trois pour cent des quantités commandées sans que ce fait puisse entraîner de contestation quelconque de la part du client.</div>
+            
+        </div>
+        <div>
+            <div>3.4.2. : Les quantités facturées sont celle qui sont effectivement livrées.</div>
+            <div>3.4.3. : Les fabrications particulières ne peuvent faire l'objet d'un retour de marchandise pour quelques raisons que ce soit.</div>
+            <div>3.5. : Délai de livraison</div>
+            <div>3.5.1. : Les délais de livraison s'entendent à compter de la date de l'accusé de réception de la commande et ne peuvent être donnés qu'à titre indicatif et sans engagement du prestataire. Aucune indemnité et/ou pénalité ne pourra être réclamé en cas de retard, sauf s'il est prouvé par le client que le dommage consécutif au retard est dû directement à une faute du prestataire et que le préjudice est certain et personnel.</div>
+            <div>3.5.2. : La reprise des marchandises est la condition préalable à l'indemnisation du préjudice.</div>
+            <div>3.5.3. : Les marchandises non disponibles en stock seront expédiées dès approvisionnement, sauf instruction expresse et écrite du client.</div>
+            <div>3.5.4. : Le prestataire ne pourra être tenu responsable en cas de retard pour des raisons de force majeure.</div>
+            <div>3.6. : Livraison</div>
+            <div>3.6.1. : La livraison a lieu soit par remise directe au client, soit par délivrance des marchandises à un expéditeur ou transport désigné par le prestataire.</div>
+            <div>3.6.2. : La charge des risques de détérioration, de perte, de vol des marchandises est transférée au client dès la remise de celles-ci.</div>
+            <div>3.6.3. : Lors de la remise des marchandises, le client doit s'assurer de leur conformité. Toute réclamation doit être faite par écrit, dans les huit jours de la réception de la marchandise.</div>
+            <div>3.6.4. : Aucun retour de marchandises ne sera accepté sans accord préalable du prestataire. Dans cette hypothèse, les marchandises devront être ainsi retournées au prestataire, aux frais du client, dans les huit jours de l'accord.</div>
+            <div>3.7. : Clause de réserve de propriété :</div>
+            <div>3.7.1. : De convention expresse, est réservée à la société, la propriété des marchandises fournies jusqu’au dernier jour de leur parfait paiement, étant précisé qu’au sens de la présente clause, seul l’encaissement effectif des chèques vaudra paiement. Il est de plus précisé que le transfert des risques passe au client dès qu’il prend physiquement possession du bien.</div>
+            <div>3.8. : Garanties</div>
+            <div>3.8.1. : La garantie ne couvre que les marchandises neuves et les vices non apparents au jour de livraison, Le délai de garantie est égal à celui accordé par le fabricant.</div>
+            <div>3.8.2. : La garantie est strictement limitée au remplacement des pièces reconnues défectueuses, sauf disposition contraire de la garantie du fabricant. Les ports aller-retour restent à la charge du client.</div>
+            <div class="titre">4. Informatique et liberté :</div>
+            <div>4.1. : Des informations et données personnelles concernant le client sont nécessaires à la gestion de sa commande par la société. Elles peuvent dans ce cadre être transmises à des sociétés tierces en charge de l’exécution des commandes aux fins de leur gestion, exécution, traitement ou service après-vente.</div>
+            <div>4.2. : L’appel téléphonique du client à la société peut aussi faire l’objet d’un enregistrement sur un support informatique. Ces informations et données sont également conservées à des fins de sécurité, afin de respecter les obligations légales et réglementaires ainsi que pour permettre à la société d’améliorer et de personnaliser les services proposés à ses Clients.</div>
+            <div>4.3. : Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée le 6 août 2004, le client dispose d'un droit d'accès, de rectification et d’opposition aux données personnelles le concernant. Sauf opposition de sa part, ces données pourront être transmises aux partenaires de la société ou utilisées pour l’informer sur d’autres produits de la société.</div>
+            <div class="titre">5. Litiges et Droit applicable :</div>
+            <div>5. : Les présentes CGV sont soumis au Droit Français - Toute action judiciaire sera portée devant les tribunaux compétents du lieu du domicile du défendeur.</div>
+        </div>
+
+
     </div>
 </body>
 </html>
