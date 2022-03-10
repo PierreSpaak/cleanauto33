@@ -40,47 +40,6 @@
             border: 1px solid black;
         }
 
-        @media screen {
-            input:not([type='checkbox']) {
-                height: 3rem;
-                background-color: rgba(210, 21, 27, 0.7);
-                font-size: 1.5rem;
-            }
-
-            textarea {
-                background-color: rgba(210, 21, 27, 0.7);
-                font-size: 1.5rem;
-            }
-
-            /*.cgv {
-                display: none;
-            }*/
-
-
-        }
-
-        @media print {
-            .notPrinted {
-                display: none;
-            }
-
-            .wrapper {
-                justify-content: unset;
-                /*grid-column-gap: 0rem;
-                grid-row-gap: 0rem;*/
-            }
-
-                .wrapper > *:first-child {
-                    margin: 0;
-                }
-
-            .cgv {
-                page-break-before: always;
-            }
-        }
-
-
-
         .cgv {
             font-size: smaller;
             text-transform: none;
@@ -100,6 +59,41 @@
             .cgv > div > div {
                 margin-bottom: 0.2rem;
             }
+
+        @media screen {
+            input:not([type='checkbox']) {
+                height: 3rem;
+                background-color: rgba(210, 21, 27, 0.7);
+                font-size: 1.5rem;
+            }
+
+            textarea {
+                background-color: rgba(210, 21, 27, 0.7);
+                font-size: 1.5rem;
+            }
+
+            .cgv {
+                display: none;
+            }
+        }
+
+        @media print {
+            .notPrinted {
+                display: none;
+            }
+
+            .wrapper {
+                justify-content: unset;
+            }
+
+                .wrapper > *:first-child {
+                    margin: 0;
+                }
+
+            .cgv {
+                page-break-before: always;
+            }
+        }
     </style>
 
 </head>
@@ -222,7 +216,7 @@
             <div>3.3.4. : Le prestataire se réserve le droit de mandater un cabinet de recouvrement tiers pour recouvrer les sommes impayées. Si tel est le cas, le paiement s'effectuera directement auprès d'eux et le prestataire refusera les paiements.</div>
             <div>3.4. : Fabrications particulières</div>
             <div>3.4.1. : Lorsque les quantités livrées et facturées au poids ou au mètre font l'objet d'une mise en fabrication particulière, elles peuvent différer dans une limite n'excédant pas trois pour cent des quantités commandées sans que ce fait puisse entraîner de contestation quelconque de la part du client.</div>
-            
+
         </div>
         <div>
             <div>3.4.2. : Les quantités facturées sont celle qui sont effectivement livrées.</div>
